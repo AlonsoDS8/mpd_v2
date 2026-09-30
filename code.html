@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,700;0,800;0,900;1,700;1,900&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-error":"#690005","on-secondary-container":"#afb6bd","surface-variant":"#333539","surface-container-lowest":"#0c0e12","on-tertiary":"#003911","on-secondary":"#2b3137","outline-variant":"#444933","outline":"#8e9379","on-secondary-fixed":"#161c22","inverse-on-surface":"#2f3035","secondary-fixed":"#dde3eb","surface-dim":"#111318","on-surface-variant":"#c4c9ac","secondary-fixed-dim":"#c1c7cf","surface-container":"#1e2024","on-primary-fixed":"#161e00","inverse-surface":"#e2e2e8","on-primary":"#283500","on-background":"#e2e2e8","background":"#111318","on-tertiary-fixed-variant":"#00531b","on-surface":"#e2e2e8","primary-fixed-dim":"#abd600","surface-container-low":"#1a1c20","on-tertiary-container":"#00752a","primary":"#ffffff","surface-bright":"#37393e","tertiary":"#ffffff","on-secondary-fixed-variant":"#41474e","primary-container":"#c3f400","surface-container-high":"#282a2e","on-primary-fixed-variant":"#3c4d00","primary-fixed":"#c3f400","error":"#ffb4ab","tertiary-fixed-dim":"#00e55b","secondary":"#c1c7cf","on-error-container":"#ffdad6","tertiary-container":"#6bff83","surface":"#111318","tertiary-fixed":"#6bff83","on-tertiary-fixed":"#002107","inverse-primary":"#506600","on-primary-container":"#556d00","error-container":"#93000a","secondary-container":"#41474e","surface-tint":"#abd600","surface-container-highest":"#333539"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","margin-mobile":"1.25rem","gutter-sm":"1rem","margin":"4rem","space-xl":"4rem","space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"2rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Chivo"],"headline-md":["Chivo"],"display-hero-mobile":["Chivo"],"headline-xl":["Chivo"],"label-tech":["JetBrains Mono"],"body-lg":["Space Grotesk"],"display-hero":["Chivo"],"label-caps":["Space Grotesk"],"body-md":["Space Grotesk"],"body-sm":["Space Grotesk"],"headline-lg":["Chivo"]},"fontSize":{"headline-xl-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-hero-mobile":["42px",{"lineHeight":"46px","letterSpacing":"-0.03em","fontWeight":"900"}],"headline-xl":["56px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"label-tech":["12px",{"lineHeight":"16px","letterSpacing":"0.12em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"display-hero":["80px",{"lineHeight":"84px","letterSpacing":"-0.04em","fontWeight":"900"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.15em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface-dim/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin-mobile md:px-gutter lg:px-margin max-w-[1440px] mx-auto flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Apex Aerodynamics Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMdfkNTp62lbnIkmW9QAZQed7MJEdd7caTBDnZyB9CTS9UKpWQMSUD9xolRcJAlMiUaNODHGE-XWXdVYZWcEDjoH1u6rnsoJVhrSuPLaZ21mP4F6eqdjtc9XkdLRlJDbBK7lm693bbjKorEH0L60niAFxsdTr2P7yVelrQJTuRRu-otrpVWZWXMBTPSlkjY8Mh6JMhJvrs8lqaYeRDt9j7xN4KMpe2ArnFob1c8-7AizcvwcDo33dj"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-primary uppercase leading-none">APEX</span><span class="font-label-tech text-label-tech text-primary-fixed tracking-widest leading-none mt-1">VORTEX LABS</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary-container border-b-2 border-primary-container font-label-caps"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="tecnologia-aerodinamica" href="#">Tecnología &amp; Aerodinámica</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="construccion-hexa-lock" href="#">Construcción Hexa-Lock</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="especificaciones-fifa-pro" href="#">Especificaciones FIFA Pro</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="pruebas-tunel-viento" href="#">Pruebas en Túnel de Viento</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="resenas-jugadores" href="#">Reseñas de Jugadores</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded text-on-surface font-label-tech text-label-tech"><span class="text-primary-container">LOC:</span><span>EU / EUR €</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div><a class="inline-flex items-center justify-center px-space-md py-space-sm rounded bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase shadow-[0_0_24px_rgba(195,244,0,0.35)] hover:bg-primary-fixed hover:text-on-primary-fixed transition-all duration-150" data-path="reservar-edicion-limitada" href="#">Reservar Edición Limitada</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full selection:bg-primary-container selection:text-on-primary-container">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest">
+<!-- Ambient energetic radial glows -->
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-primary-container/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-40 w-[450px] h-[450px] bg-tertiary-container/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin pt-8 pb-20 lg:pb-28">
+<!-- Top Release Pill & Telemetry Stamp -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-high shadow-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_10px_#c3f400]"></span>
+<span class="font-label-tech text-label-tech text-primary uppercase">LANZAMIENTO MUNDIAL</span>
+<span class="text-on-surface-variant font-label-tech text-label-tech">•</span>
+<span class="font-label-tech text-label-tech text-primary-container">OFICIAL MATCH BALL 2025</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-md font-label-tech text-label-tech text-on-surface-variant">
+<span>LAT: 47.0707° N (GRAZ TUNNEL)</span>
+<span class="text-primary-container">BATCH // 001-ALPHA</span>
+</div>
+</div>
+<!-- Main Headline Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
+<div class="lg:col-span-8 flex flex-col">
+<h1 class="font-display-hero text-display-hero uppercase tracking-tighter text-primary leading-none">
+            LA FÍSICA DEL <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container via-primary to-secondary-fixed">VUELO PERFECTO.</span><br/>
+<span class="text-on-surface-variant">CERO RESISTENCIA.</span>
+</h1>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-between h-full pt-2">
+<p class="font-body-lg text-body-lg text-secondary mb-6">
+            Evolución balística definitiva. Sellado térmico sin costuras <span class="text-primary font-medium">Hexa-Lock</span> con micro-canales biomiméticos de flujo laminar desarrollados en túnel aeroespacial. La pelota oficial de los torneos más exigentes del planeta.
+          </p>
+<!-- Pre-order Tier Selector Card -->
+<div class="p-5 rounded-lg bg-surface-container/90 shadow-xl backdrop-blur-md">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Preventa Lote 01</span>
+<span class="font-label-tech text-label-tech text-primary-container">UNIDADES LIMITADAS</span>
+</div>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">$179.99</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">$220.00</span>
+<span class="ml-auto font-label-tech text-label-tech px-2 py-0.5 rounded bg-surface-variant text-primary-container font-semibold">-18% EARLY</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full py-3.5 px-4 rounded bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase font-bold tracking-wider hover:bg-primary-fixed hover:shadow-[0_0_24px_rgba(195,244,0,0.45)] transition-all" type="button">
+                Reservar Primer Lote
+              </button>
+<button class="w-full py-3.5 px-4 rounded bg-surface-container-high text-primary font-label-caps text-label-caps uppercase font-bold flex items-center justify-center gap-1.5 hover:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">play_circle</span>
+                Túnel 45s
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Visual Stage with Telemetry Hotspots -->
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-high shadow-2xl">
+<div class="w-full aspect-[16/9] lg:aspect-[21/9] relative flex items-center justify-center">
+<img alt="APEX VORTEX Pro Match Ball con estelas aerodinámicas verdes en túnel de viento y sello FIFA Pro" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDodPre6LgWbcU2VnB0QWNymSgSM-Cqr4h0C7U48nwdSBTOnfd-8_EeHBXrcC7U8OYPk_HS5VsPh9ScdD-d7vH8y35-hp3Po_VhgyIQdhEWj_59pt-DiEGnS7eTbVE9bz7UhSE1ZaKo6YqSwJvCsF2smz_rhAlgEOi3Tesn1pU_l3OQ8fWLLjQmPIPjkn2e0Ii3u5J7rUB7q4DzB1nBTg7L0eohGRVQUF32Rg6I57ZvqV_A8Q1j07-6"/>
+<!-- Gradient Vignette Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-surface-container-lowest/40 pointer-events-none"></div>
+<!-- Hotspot Badges overlaying visual -->
+<!-- Hotspot 1: Trajectory Stability -->
+<div class="absolute top-[28%] left-[8%] md:left-[16%] p-3 rounded-lg bg-surface-container-lowest/85 backdrop-blur-md shadow-xl hidden sm:flex items-center gap-3 animate-bounce" style="animation-duration: 4s;">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">air</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-tech text-label-tech text-primary-container font-bold">+8.4% ESTABILIDAD</span>
+<span class="font-body-sm text-body-sm text-secondary">Desviación lateral cero</span>
+</div>
+</div>
+<!-- Hotspot 2: Water Absorption -->
+<div class="absolute bottom-[22%] left-[10%] md:left-[18%] p-3 rounded-lg bg-surface-container-lowest/85 backdrop-blur-md shadow-xl flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-tech text-label-tech text-primary font-bold">0.0% ABSORCIÓN</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sellado térmico molecular</span>
+</div>
+</div>
+<!-- Hotspot 3: Micro-Texture AeroDimple -->
+<div class="absolute top-[32%] right-[8%] md:right-[15%] p-3 rounded-lg bg-surface-container-lowest/85 backdrop-blur-md shadow-xl flex items-center gap-3">
+<div class="flex flex-col text-right">
+<span class="font-label-tech text-label-tech text-primary-fixed font-bold">AERODIMPLE™ V4</span>
+<span class="font-body-sm text-body-sm text-secondary">Micro-vértices superficiales</span>
+</div>
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">grid_4x4</span>
+</div>
+</div>
+<!-- Live Telemetry Readout Box Bottom-Right -->
+<div class="absolute bottom-4 right-4 md:bottom-8 md:right-8 p-4 rounded-lg bg-surface-container/95 backdrop-blur-md shadow-2xl max-w-xs hidden md:block">
+<div class="flex items-center justify-between pb-2 mb-2 font-label-tech text-label-tech text-on-surface-variant">
+<span>TELEMETRÍA GRAZ #991</span>
+<span class="text-primary-container">ACTIVO</span>
+</div>
+<div class="space-y-1.5 font-label-tech text-label-tech">
+<div class="flex justify-between text-on-surface">
+<span class="text-on-surface-variant">VELOCIDAD TÚNEL:</span>
+<span class="text-primary font-semibold">140.2 KM/H</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-on-surface-variant">COEFICIENTE DRAG (Cd):</span>
+<span class="text-primary-container font-semibold">0.184 Cx</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-on-surface-variant">MAGNUS OSCILLATION:</span>
+<span class="text-primary font-semibold">&lt; 0.02 Hz</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TECHNICAL CREDIBILITY STRIP -->
+<section class="w-full bg-surface-container py-10 relative">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-between">
+<!-- Credential 1 -->
+<div class="flex items-center gap-3 p-4 rounded-lg bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps uppercase text-primary">FIFA QUALITY PRO</p>
+<p class="font-label-tech text-label-tech text-on-surface-variant">Certificado #100428-A</p>
+</div>
+</div>
+<!-- Credential 2 -->
+<div class="flex items-center gap-3 p-4 rounded-lg bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">wind_power</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps uppercase text-primary">GRAZ TUNNEL TESTED</p>
+<p class="font-label-tech text-label-tech text-on-surface-variant">Calibración 42 m/s</p>
+</div>
+</div>
+<!-- Credential 3 -->
+<div class="flex items-center gap-3 p-4 rounded-lg bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">join_inner</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps uppercase text-primary">ZERO-SEAM BONDING</p>
+<p class="font-label-tech text-label-tech text-on-surface-variant">Fusión Molecular 185°C</p>
+</div>
+</div>
+<!-- Credential 4 -->
+<div class="flex items-center gap-3 p-4 rounded-lg bg-surface-container-low shadow-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">nest_eco_leaf</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps uppercase text-primary">ECO-CARBON BIO-CORE</p>
+<p class="font-label-tech text-label-tech text-on-surface-variant">100% Reciclable Pro-Tier</p>
+</div>
+</div>
+</div>
+<!-- Elite Quote Pullout -->
+<div class="mt-10 p-6 md:p-8 rounded-xl bg-surface-container-high shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-surface-variant overflow-hidden shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Retrato editorial dramático de un jugador de fútbol profesional de élite con sudor e iluminación lateral intensa, fondo oscuro cinematográfico" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPeefM6JjqMIebbYICpLuqjCSjN6DnK80bgxxPmxEz6V23nGdtN0UbTbWOv6IlkfoZRqi_PHWgi2tKkOKc0RS6c1hDz87g4MZObeeE7ms617ycO_Wq0918ghC3WTZIuYtvUBy7uvxKMe6HaVDIl9CFmcuIr1GJBG9xuDcV9AOAr-602u3I8SqfWqof--44IbDW7W6pEdQwldl6R3RTxS82zC0CXtOMWhLsBj85d1f7vhr4sXRkSKV3"/>
+</div>
+<div>
+<blockquote class="font-body-lg text-body-lg text-on-surface italic">
+              "Al golpear a más de 115 km/h, los balones ordinarios vibran en el aire. Con el Vortex, la trayectoria es una línea pura grabada con láser. No hay knuckleball involuntario."
+            </blockquote>
+<p class="font-label-tech text-label-tech text-primary-container mt-1">
+              MARCUS V. // MEDIOCAMPISTA INTERNACIONAL • CLUB DE LIGA CAMPEONES
+            </p>
+</div>
+</div>
+<div class="shrink-0 px-4 py-2 rounded bg-surface-container font-label-caps text-label-caps text-secondary-fixed">
+          TEST MATCH VERIFIED
+        </div>
+</div>
+</div>
+</section>
+<!-- 4-LAYER EXPLODED VIEW / ANATOMÍA TÉCNICA -->
+<section class="w-full py-20 bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+<div>
+<span class="font-label-tech text-label-tech text-primary-container tracking-widest uppercase">ARQUITECTURA DE MATERIALES // 4 CAPAS</span>
+<h2 class="font-headline-xl text-headline-xl text-primary uppercase mt-2">
+            INGENIERÍA SUBCUTÁNEA HEXA-GRID
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Cada capa cumple una función física no negociable: sustentación aerodinámica, transferencia cinética instantánea y estanqueidad barométrica inalterable.
+        </p>
+</div>
+<!-- Grid of the 4 structural layers -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Layer 1 -->
+<div class="group p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-tech text-label-tech text-primary-container px-2 py-0.5 rounded bg-surface-container-high">CAPA 01</span>
+<span class="font-label-tech text-label-tech text-on-surface-variant">1.20 MM</span>
+</div>
+<div class="w-full h-40 rounded-lg overflow-hidden mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Macro fotografía de textura de piel de balón de fútbol de alta tecnología con micro relieves geométricos hexagonales y sutil brillo de fibra de carbono reflectante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNdkaBtI9glN9UjKREu1-Wmftp7L9bIjfObmVol00tsEtswiNuaM74rWwywPgQAr49tV5hZM5ZzRu4mumlTSuAiSarAsT_ujy9dqfuX4xUr4Pxj5L10qqs6ld_s4GWkypoYYpK7MPR1vK10RC7Xgb6V2ZR_qlhDZa43N86JaCCTOXW2XfpeqbqSROuHEHqlwTicfZqwFkrFxCHvZGUXn4v9DSv_-BKPx6CzAPFeqv_lu4sZCdyKcVU"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Cubierta AeroGroove™</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Piel de poliuretano japonés micro-ranurado. Los micro-canales inducen turbulencia controlada en la capa límite, retrasando el desprendimiento del flujo de aire y eliminando el desvío errático.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container rounded p-3">
+<span class="font-label-tech text-label-tech text-on-surface-variant block">COEF. DE FRICCIÓN:</span>
+<span class="font-label-tech text-label-tech text-primary font-bold">0.82 µ (Seco) / 0.79 µ (Húmedo)</span>
+</div>
+</div>
+<!-- Layer 2 -->
+<div class="group p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-tech text-label-tech text-primary-container px-2 py-0.5 rounded bg-surface-container-high">CAPA 02</span>
+<span class="font-label-tech text-label-tech text-on-surface-variant">2.80 MM</span>
+</div>
+<div class="w-full h-40 rounded-lg overflow-hidden mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Detalle científico de espuma elástica de retorno de energía viscoelástica POE Foam en corte transversal con celdas de amortiguación bajo iluminación de laboratorio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmfx4QnfqXDtNl7kcwu0s8UYU8JsjuiJ1eXnM3bn2qWOSk88gBrYYxNOyQpr0bumuj1EHpBfkSBaqkjvHzVLffHKmD9OlgBlxevudY3KcNGCI84Q4pawZ9b9oqqETpeI4hNq0h8aPLp7KaYhec7Xbn4xx64UzrT_2t6Ow38n7wVDWt_ffzEa7Belzdy_mQhUPPPA7-rdDvfnZiRq6TskTVe9DScr1dRSG8FInXqKcXVKLR_qYOokfJ"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Matriz POE Foam</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Compuesto viscoelástico de elastómero poliolefínico de 4 densidades. Amortigua el choque inicial para asegurar un primer toque sedoso y devuelve el 94% de energía cinética en lanzamientos directos.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container rounded p-3">
+<span class="font-label-tech text-label-tech text-on-surface-variant block">RETORNO CINÉTICO:</span>
+<span class="font-label-tech text-label-tech text-primary-fixed font-bold">94.2% RESTITUCIÓN</span>
+</div>
+</div>
+<!-- Layer 3 -->
+<div class="group p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-tech text-label-tech text-primary-container px-2 py-0.5 rounded bg-surface-container-high">CAPA 03</span>
+<span class="font-label-tech text-label-tech text-on-surface-variant">0.45 MM</span>
+</div>
+<div class="w-full h-40 rounded-lg overflow-hidden mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Malla geométrica tridimensional de hilos sintéticos entrelazados de alta tensión técnica sobre fondo negro y detalles fluorescentes en ángulo isométrico" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-Iq45-3u2jyXO7g5dPpFpvsE0GU7hJnJ7kvxDjMazjRYmNw2h9jlVYWGFMcij4zDqeR9-pR9Rg6Hrw1lWOFRsItynPInN9-pwzJeaafofl-wHXAI9ITcBQKfVmdZ3umiHoUK-063KE2nma4VbC7BAWAd2LoE8y6U4k_TiMkF8w8zRLe0sOa5yLOthaY95C8TsvtAB42NVcCSMWjJxHtLTNTrWUnk8Ez7xJDm0V0sKZqhD8Y8GL88_"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Malla Hexa-Grid</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Estructura de polietileno de peso molecular ultra alto (UHMWPE). Confinamiento esférico omnidireccional que evita la deformación ovoide bajo tensiones de compresión de hasta 850 Newtons.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container rounded p-3">
+<span class="font-label-tech text-label-tech text-on-surface-variant block">RESISTENCIA A TENSIÓN:</span>
+<span class="font-label-tech text-label-tech text-primary font-bold">3,200 N/m² ESFÉRICA</span>
+</div>
+</div>
+<!-- Layer 4 -->
+<div class="group p-6 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-200 shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-tech text-label-tech text-primary-container px-2 py-0.5 rounded bg-surface-container-high">CAPA 04</span>
+<span class="font-label-tech text-label-tech text-on-surface-variant">0.90 MM</span>
+</div>
+<div class="w-full h-40 rounded-lg overflow-hidden mb-6 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Cámara interna de balón en látex enriquecido con carbono y válvula de titanio pulido con reflejos metálicos modernos y fondo oscuro minimalista" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhPzYV3x8IBy5jSERU65J2oxk5Owl3MI3O14PHCTeghKUH5EBQzZe1MtMqCawXynWxZvTMuoqHEcMS1uz9NwCEBxeyxO7oQeeVGha7mbQRsghbAiZbXQRL0ifcyoOUzgLmh_S7HzUOStlxYoCGvP_o3YXwc3uHP3f2lCGZ2tGy7HbHpKcHHf5KX_Lhw0vn4qwCkWOdOswZsz4zzWEDYYnZNZl0Y39O_A9TWvbFUigmA9v_u_DvvZmi"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Cámara Carbon Latex</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+              Látex orgánico infusionado con micro-partículas de grafito para sellar la microporosidad. Válvula hermética de aleación de titanio con balance de contrapeso estático cero.
+            </p>
+</div>
+<div class="mt-6 pt-4 bg-surface-container rounded p-3">
+<span class="font-label-tech text-label-tech text-on-surface-variant block">PÉRDIDA DE PRESIÓN:</span>
+<span class="font-label-tech text-label-tech text-primary-container font-bold">&lt; 0.05 BAR / 6 MESES</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TELEMETRY BENCHMARK / COMPARATIVA DE RENDIMIENTO -->
+<section class="w-full py-20 bg-surface-container-lowest relative">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Telemetry Data Grid -->
+<div class="lg:col-span-6 flex flex-col">
+<span class="font-label-tech text-label-tech text-primary-container tracking-widest uppercase">TELEMETRÍA COMPARATIVA // BALONES ESTÁNDAR PRO</span>
+<h2 class="font-headline-xl text-headline-xl text-primary uppercase mt-2 mb-6">
+            MÉTRICAS QUE DEFINEN CAMPEONATOS
+          </h2>
+<p class="font-body-md text-body-md text-secondary mb-8">
+            En un disparo de falta desde 30 metros, una desviación de 20 centímetros es la diferencia entre el poste y la escuadra. Sometimos el APEX VORTEX a 50,000 repeticiones frente a los 3 balones oficiales más usados de la actualidad.
+          </p>
+<!-- Benchmarks bars -->
+<div class="space-y-6">
+<!-- Metric 1 -->
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-label-caps text-label-caps uppercase text-primary">Dispersión de Trayectoria a 30 Metros</span>
+<span class="font-label-tech text-label-tech text-primary-container font-bold">12 CM <span class="text-on-surface-variant font-normal">(vs 48 cm estándar)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container rounded-full" style="width: 25%"></div>
+</div>
+<div class="flex justify-between font-label-tech text-label-tech text-on-surface-variant mt-1">
+<span>VORTEX (Alta precisión)</span>
+<span>Promedio Competidores (4x dispersión)</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-label-caps text-label-caps uppercase text-primary">Retención de Esfericidad tras 50,000 Impactos (110 km/h)</span>
+<span class="font-label-tech text-label-tech text-primary-container font-bold">99.8% INTEGRIDAD</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-gradient-to-r from-primary-container to-tertiary-container rounded-full" style="width: 99.8%"></div>
+</div>
+<div class="flex justify-between font-label-tech text-label-tech text-on-surface-variant mt-1">
+<span>FIFA Quality Pro exige: &gt;97.5%</span>
+<span>VORTEX: 99.8%</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-label-caps text-label-caps uppercase text-primary">Rebote Uniforme Multidireccional (2.0m de caída)</span>
+<span class="font-label-tech text-label-tech text-primary-container font-bold">142 CM ± 0.5 CM</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container rounded-full" style="width: 95%"></div>
+</div>
+<div class="flex justify-between font-label-tech text-label-tech text-on-surface-variant mt-1">
+<span>Desviación estándar: ±0.5 cm</span>
+<span>Tolerancia internacional: ±3.0 cm</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-label-caps text-label-caps uppercase text-primary">Rotación Estabilizada de Vuelo (RPM)</span>
+<span class="font-label-tech text-label-tech text-primary-container font-bold">420 RPM CONSTANTE</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container rounded-full" style="width: 88%"></div>
+</div>
+<div class="flex justify-between font-label-tech text-label-tech text-on-surface-variant mt-1">
+<span>Flujo laminar estable</span>
+<span>Sin micro-vórtices de desestabilización</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Radar Chart Visualization Card -->
+<div class="lg:col-span-6">
+<div class="p-8 rounded-2xl bg-surface-container shadow-2xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-6">
+<div>
+<h4 class="font-headline-md text-headline-md text-primary uppercase">RADAR DE RENDIMIENTO</h4>
+<p class="font-label-tech text-label-tech text-on-surface-variant">ÍNDICE BALÍSTICO DINÁMICO</p>
+</div>
+<div class="flex items-center gap-4 font-label-tech text-label-tech">
+<span class="flex items-center gap-1.5 text-primary-container">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span> APEX VORTEX
+                </span>
+<span class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span> BALÓN TÍPICO
+                </span>
+</div>
+</div>
+<!-- Minimalist Radar Graphic SVG -->
+<div class="w-full aspect-square max-w-[380px] mx-auto relative flex items-center justify-center py-4">
+<svg class="w-full h-full" viewbox="0 0 400 400">
+<!-- Background Webs -->
+<polygon fill="none" points="200,40 352,150 294,330 106,330 48,150" stroke="#282a2e" stroke-width="1.5"></polygon>
+<polygon fill="none" points="200,80 314,162 270,297 130,297 86,162" stroke="#282a2e" stroke-width="1.5"></polygon>
+<polygon fill="none" points="200,120 276,175 247,265 153,265 124,175" stroke="#282a2e" stroke-width="1.5"></polygon>
+<polygon fill="none" points="200,160 238,187 223,232 177,232 162,187" stroke="#282a2e" stroke-width="1.5"></polygon>
+<!-- Axes -->
+<line stroke="#333539" stroke-width="1" x1="200" x2="200" y1="200" y2="40"></line>
+<line stroke="#333539" stroke-width="1" x1="200" x2="352" y1="200" y2="150"></line>
+<line stroke="#333539" stroke-width="1" x1="200" x2="294" y1="200" y2="330"></line>
+<line stroke="#333539" stroke-width="1" x1="200" x2="106" y1="200" y2="330"></line>
+<line stroke="#333539" stroke-width="1" x1="200" x2="48" y1="200" y2="150"></line>
+<!-- Benchmark Competitor Polygon -->
+<polygon fill="#333539" fill-opacity="0.35" points="200,110 300,180 250,280 140,290 90,180" stroke="#8e9379" stroke-width="1.5"></polygon>
+<!-- APEX VORTEX Dominant Polygon -->
+<polygon fill="#c3f400" fill-opacity="0.25" points="200,48 345,155 288,322 112,320 54,154" stroke="#c3f400" stroke-width="2.5"></polygon>
+<!-- Vertices dots -->
+<circle cx="200" cy="48" fill="#c3f400" r="4"></circle>
+<circle cx="345" cy="155" fill="#c3f400" r="4"></circle>
+<circle cx="288" cy="322" fill="#c3f400" r="4"></circle>
+<circle cx="112" cy="320" fill="#c3f400" r="4"></circle>
+<circle cx="54" cy="154" fill="#c3f400" r="4"></circle>
+<!-- Labels -->
+<text fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" x="200" y="28">AERODINÁMICA (99)</text>
+<text fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="start" x="365" y="155">GRIP LLUVIA (96)</text>
+<text fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" x="305" y="350">DURABILIDAD (99)</text>
+<text fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle" x="95" y="350">RETENCIÓN PSI (98)</text>
+<text fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end" x="35" y="155">RESTITUCIÓN (94)</text>
+</svg>
+</div>
+<div class="mt-4 p-4 rounded-lg bg-surface-container-high flex items-center justify-between">
+<span class="font-label-tech text-label-tech text-on-surface">TOTAL RATING // PUNTUACIÓN GLOBAL:</span>
+<span class="font-headline-md text-headline-md text-primary-container">97.8 / 100</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EDICIONES LIMITADAS & COLORWAYS -->
+<section class="w-full py-20 bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-tech text-label-tech text-primary-container tracking-widest uppercase">GAMA 2025 MATCH-GRADE</span>
+<h2 class="font-headline-xl text-headline-xl text-primary uppercase mt-2">
+            EDICIONES DE COMPETICIÓN
+          </h2>
+</div>
+<div class="flex items-center gap-3 mt-4 md:mt-0">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Tallas Homologadas:</span>
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary-container font-label-tech text-label-tech font-bold" type="button">SIZE 5 (PRO)</button>
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface-variant hover:text-primary font-label-tech text-label-tech" type="button">SIZE 4 (ACADEMY)</button>
+</div>
+</div>
+<!-- Colorway Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Colorway 1: Cyber Volt (Featured) -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-xl flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Balón de fútbol Apex Vortex en edición Cyber Volt con paneles de fibra de carbono oscura y líneas de flujo verde volt eléctrico, fondo de estudio de alta definición" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz23CkZJDG_2UcaQkuXXM0RTUdChLVpehaS-Xhf_xJO8k-SOaDRpdX4DvUGnifz548_50HFotLBcViX9s8wizOF5b-V13ImX4czrKbr7DHVF3kAZh2F1al8FyhbtMpP6CW-fuaOR8PkJLhHrPgud5pPR-1lwYYueO7EaCHB8h4xaYtIDYZu6Byjyb44fmDrcVOuu0k431iGF0xxMBqfM_-dcFctV7cP2pEXVEcqvsZ7DPirZws7aLa"/>
+<span class="absolute top-4 left-4 font-label-tech text-label-tech px-2.5 py-1 rounded bg-primary-container text-on-primary-container font-bold">
+                EDICIÓN PRINCIPAL
+              </span>
+<span class="absolute bottom-4 right-4 font-label-tech text-label-tech px-2 py-0.5 rounded bg-surface-container-lowest/80 text-primary">
+                1,500 UDS DISPONIBLES
+              </span>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">CYBER VOLT / CARBON</h3>
+<span class="font-headline-md text-headline-md text-primary-container">$179.99</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">
+                La combinación aerodinámica insignia. Alto contraste visual calibrado para estadios nocturnos y transmisiones televisivas 4K a 120 FPS.
+              </p>
+<div class="flex items-center gap-2 mb-6">
+<span class="w-4 h-4 rounded-full bg-primary-container"></span>
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest"></span>
+<span class="font-label-tech text-label-tech text-on-surface-variant ml-2">Volt #C3F400 / Matte Carbon</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<button class="w-full py-3 rounded bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase font-bold hover:bg-primary-fixed transition-colors" type="button">
+              Reservar Cyber Volt
+            </button>
+</div>
+</div>
+<!-- Colorway 2: Arctic Silver -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-xl flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Balón de fútbol Apex Vortex en variante Arctic Silver con cuero sintético blanco platino perlado y detalles carmesí brillante sobre base metálica" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaq9ZNYFXMP04Z1HSf1Zpy46mEl9sny8eov4Z0TabrzC7NUgWInlJj4f4KGLRg0DpGqihhN62FigrQXBm-cHfNbOSplqntH2Jar_jR0fU07tXCOHYIh2iV-yV9ICMJEmdGCyDyu6Vl5xx0BAo-8w2siBMHB8AosNSJs_jRdthgcrc2L87YFVEXjY04c6e8gyLSKSs5Vfg91tHEZWs6Evh3FpMk3Oc-7VamCPKOCRKy1oy4k0tZgkrw"/>
+<span class="absolute top-4 left-4 font-label-tech text-label-tech px-2.5 py-1 rounded bg-surface-container-high text-primary font-bold">
+                WINTER FLIGHT
+              </span>
+<span class="absolute bottom-4 right-4 font-label-tech text-label-tech px-2 py-0.5 rounded bg-surface-container-lowest/80 text-primary">
+                1,000 UDS DISPONIBLES
+              </span>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">ARCTIC SILVER / CRIMSON</h3>
+<span class="font-headline-md text-headline-md text-primary">$179.99</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">
+                Diseñado para condiciones climáticas extremas. Respaldo de visibilidad invernal con pigmentos fluorescentes reflectantes UV.
+              </p>
+<div class="flex items-center gap-2 mb-6">
+<span class="w-4 h-4 rounded-full bg-secondary-fixed"></span>
+<span class="w-4 h-4 rounded-full bg-error"></span>
+<span class="font-label-tech text-label-tech text-on-surface-variant ml-2">Arctic Platinum / Hyper Crimson</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<button class="w-full py-3 rounded bg-surface-container-high text-primary font-label-caps text-label-caps uppercase font-bold hover:bg-surface-variant transition-colors" type="button">
+              Reservar Arctic Silver
+            </button>
+</div>
+</div>
+<!-- Colorway 3: Midnight Iridescent (Founder Box) -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-xl flex flex-col justify-between group relative">
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="relative w-full aspect-square bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Balón de fútbol Apex Vortex edición coleccionista Midnight Blackout con reflejos cromados tornasolados y caja de exhibición magnética de lujo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDBQt3zGFJ8j9VbLF8L_MqQFRPhPK9kioU3EbGNa5JQSCnb3oLt2A3p8o2NlAj4nv5JAVQFAOVmjmW6Aus2aUROkebsXeP5PxVEnLjiEpzEhhfeUbGjgqYFEujXY_mS3bZk1exwTNpbjJVtXmDb9czE1ICxAJLeWBj9AfSj2VYd4SlE0zgP5P6JMEP-UyFkT4-5JnhzPwde_qC4oYg6aws-PhnW-s_vQH7g5FVq34Xvvw0Kk156SSc"/>
+<span class="absolute top-4 left-4 font-label-tech text-label-tech px-2.5 py-1 rounded bg-primary text-on-primary font-bold">
+                EDICIÓN FUNDADOR // CAJA MAGNÉTICA
+              </span>
+<span class="absolute bottom-4 right-4 font-label-tech text-label-tech px-2 py-0.5 rounded bg-surface-container-lowest/80 text-primary-container">
+                SOLO 500 UDS
+              </span>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-md text-headline-md text-primary">MIDNIGHT / IRIDESCENT</h3>
+<span class="font-headline-md text-headline-md text-primary-container font-bold">$229.99</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">
+                Incluye caja expositora de levitación magnética con display acrílico, bomba de presión digital calibrada y certificado grabado en titanio.
+              </p>
+<div class="flex items-center gap-2 mb-6">
+<span class="w-4 h-4 rounded-full bg-surface-container-lowest"></span>
+<span class="w-4 h-4 rounded-full bg-primary"></span>
+<span class="font-label-tech text-label-tech text-on-surface-variant ml-2">Obsidian Black / Chrome Prism</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<button class="w-full py-3 rounded bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase font-bold hover:bg-primary-fixed hover:shadow-[0_0_20px_rgba(195,244,0,0.3)] transition-all" type="button">
+              Reservar Edición Fundador
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIOS Y EVALUACIONES DE CAMPO -->
+<section class="w-full py-20 bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+<div>
+<span class="font-label-tech text-label-tech text-primary-container tracking-widest uppercase">EVALUACIONES EN CONDICIONES REALES</span>
+<h2 class="font-headline-xl text-headline-xl text-primary uppercase mt-2">
+            EL VEREDICTO DE LA ÉLITE
+          </h2>
+</div>
+<div class="flex items-center gap-3 mt-4 md:mt-0 p-3 rounded-lg bg-surface-container">
+<span class="font-headline-md text-headline-md text-primary font-bold">4.9 / 5.0</span>
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-label-tech text-label-tech text-on-surface-variant">(250+ Pro Players)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="p-6 rounded-xl bg-surface-container flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-1 text-primary-container mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-3">"Grip letal incluso con lluvia torrencial"</h4>
+<p class="font-body-md text-body-md text-secondary">
+              "En Alemania jugamos con agua nieve con frecuencia. La mayoría de los balones absorben gramos de agua y se vuelven pesados o resbaladizos. El Vortex mantiene el mismo peso exacto y la textura te da agarre milimétrico para meter efecto cerrado."
+            </p>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-4 bg-surface-container-low rounded p-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Fotografía de guardameta profesional con guantes y camiseta técnica mirando enfocado hacia el campo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3WTFnv-Fzt-wfVqMcEa8zIL3gC5LewOzhnrrsc6Ln6YduT98BDe2qEDTzgzyR8RrFhsVJGYPjRLq08mOnUGLyf0iW9RPSdAbzkkMhzpP8GuY0iVucjxNXM-RyihU0wu3uksIG0mnyzeLdbqfXnKpV3am8wq4K42QBObrRyYSzNR6Rdrt93SUs9xrWRY9K8ig0GHZVZa5-k8NejtdMcmp0sVixmIWtqTFHAbyLOpt4Sh3XoD-E1Cp2"/>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary">JONAS S. // PORTERO TITULAR</p>
+<p class="font-label-tech text-label-tech text-on-surface-variant">LIGA ALEMANA PRO</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-6 rounded-xl bg-surface-container flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-1 text-primary-container mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-3">"Salida de balón ultrasónica"</h4>
+<p class="font-body-md text-body-md text-secondary">
+              "El rebote en el empeine total es explosivo. No se siente hueco como otros balones termoformados. Tiene una solidez compacta que transmite exactamente la fuerza que aplicaste sin perder vatios de potencia."
+            </p>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-4 bg-surface-container-low rounded p-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Delantero estrella internacional celebrando con gesto técnico y concentración en el túnel de vestuarios" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYgXqRByAplmBFlUWA4uUF5cBuMUQZewP_WXVdmR1PE6ipSFT4ZL4E7F2w3SIOUlo0e24JvcHYDzQlf7pxtZJPtwUkTsnE1n297MJVA-NOqr7rZhhlDxepfuWumO7g8p90Kd7zUUNj5RPAjdMYHMEcmzV7p0IaUQI8Ce0c-Hq_6zvYU8kA3ACdMXMnaDx92Dv0JlRirERWQvhuNCyxQW1Ehqr4Z0jx1kDPhICovlxv5Ar3ZKiSuyZG"/>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary">DIEGO T. // EXTREMO DIESTRO</p>
+<p class="font-label-tech text-label-tech text-on-surface-variant">SELECCIÓN NACIONAL</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-6 rounded-xl bg-surface-container flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-1 text-primary-container mb-4">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-3">"El estándar que todo torneo necesita"</h4>
+<p class="font-body-md text-body-md text-secondary">
+              "Como cuerpo técnico buscamos consistencia. Si cambias de balón entre partido de liga y torneo continental, el equipo lo resiente. El Apex Vortex ofrece una uniformidad matemática insólita."
+            </p>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-4 bg-surface-container-low rounded p-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Entrenador principal de fútbol profesional con auriculares tácticos observando el campo de entrenamiento" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhJ_h0FkpS17JbVI6kdxdAgUKc25YWuEiWF8V51P24DgcsnQdKaZic-Y_JjfnJuhjgVskcjoyyfJ204xb0NAsAKGpN38tPW5MtQhiAwwhQJoeqhU0OwcCe7K8k8UDHXQkMWObu8YasKThPt5GGtXpRAN1rQiqnNcHx4el8Xf6B-cwAGiIX6Dm-dHK7I6T7K1RhX2iuQmgEOmwvolU-9SbK1QjIOywv6rGaQGQEljAtTR1rLFVPtIoY"/>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-primary">CARLO M. // DIRECTOR TÉCNICO</p>
+<p class="font-label-tech text-label-tech text-on-surface-variant">SERIE A ITALIANA</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- NFC CHIP AUTHENTICATION & TECH SPECS / FAQ -->
+<section class="w-full py-20 bg-surface">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- NFC Embedded Chip Highlight -->
+<div class="lg:col-span-5 p-8 rounded-2xl bg-surface-container-low shadow-xl flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary-container mb-6">
+<span class="material-symbols-outlined text-[28px]">nfc</span>
+</div>
+<span class="font-label-tech text-label-tech text-primary-container tracking-widest uppercase">TECNOLOGÍA CRIPTOGRÁFICA // APEX SMART CORE</span>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase mt-2 mb-4">
+              CHIP NFC INTEGRADO EN VÁLVULA
+            </h3>
+<p class="font-body-md text-body-md text-secondary mb-6">
+              Acerca cualquier smartphone a la válvula para autenticar instantáneamente tu unidad numerada en blockchain. Accede a las telemetrías oficiales de prueba de tu lote específico y activa tu garantía oficial directa de 2 años.
+            </p>
+<div class="space-y-3 font-label-tech text-label-tech">
+<div class="p-3 rounded bg-surface-container flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">CHIPSET:</span>
+<span class="text-primary font-medium">NTAG 424 DNA Crypto</span>
+</div>
+<div class="p-3 rounded bg-surface-container flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">CERTIFICACIÓN:</span>
+<span class="text-primary font-medium">AES-128 Hardware Shield</span>
+</div>
+<div class="p-3 rounded bg-surface-container flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">PRESIÓN RECOMENDADA:</span>
+<span class="text-primary-container font-semibold">0.8 - 1.0 BAR (11.6 - 14.5 PSI)</span>
+</div>
+</div>
+</div>
+<div class="mt-8 p-4 rounded bg-surface-container-high flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">verified_user</span>
+<span class="font-body-sm text-body-sm text-primary">Garantía total de esfericidad y estanqueidad por 24 meses.</span>
+</div>
+</div>
+<!-- Technical FAQ Accordion -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<span class="font-label-tech text-label-tech text-primary-container tracking-widest uppercase">PREGUNTAS FRECUENTES // PROTOCOLOS</span>
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase mt-2 mb-8">
+            ESPECIFICACIONES Y MANTENIMIENTO
+          </h3>
+<div class="space-y-4" id="faq-container">
+<!-- FAQ Item 1 -->
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary text-[18px]">¿El balón viene inflado a presión de partido oficial?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200">expand_more</span>
+</div>
+<div class="mt-3 font-body-sm text-body-sm text-secondary hidden">
+                Sí. Cada APEX VORTEX se despacha dentro de su cápsula hermética sellado a exactamente 0.90 BAR con aire seco deshumidificado para preservar la elasticidad molecular del látex durante el tránsito.
+              </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary text-[18px]">¿Es apto para césped artificial de última generación?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200">expand_more</span>
+</div>
+<div class="mt-3 font-body-sm text-body-sm text-secondary hidden">
+                Absolutamente. La cubierta AeroGroove™ posee un recubrimiento cerámico invisible de poliuretano termoestable que resiste la fricción térmica de los gránulos de caucho hasta 70°C sin degradación del grip.
+              </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary text-[18px]">¿Qué cubre la garantía de reemplazo de 2 años?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200">expand_more</span>
+</div>
+<div class="mt-3 font-body-sm text-body-sm text-secondary hidden">
+                Cubre cualquier pérdida de esfericidad superior a 1.2%, despegado de uniones térmicas o fuga en la válvula central por defectos de fabricación. Si falla bajo condiciones normales de juego profesional, enviamos una nueva unidad inmediatamente.
+              </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="p-5 rounded-xl bg-surface-container-low shadow-sm cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary text-[18px]">¿Cuándo se realiza la entrega del primer lote preventa?</span>
+<span class="material-symbols-outlined text-primary-container transition-transform duration-200">expand_more</span>
+</div>
+<div class="mt-3 font-body-sm text-body-sm text-secondary hidden">
+                Los envíos prioritarios del Lote 001-ALPHA comienzan en un plazo de 14 días laborables con número de seguimiento exprés con seguro integral incluido para Europa y América.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BANNER FINAL DE CONVERSIÓN CON CONTADOR -->
+<section class="w-full py-20 bg-surface-container-lowest relative overflow-hidden">
+<!-- Neon Volt Ambient Sweep -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/10 via-transparent to-primary-container/5 pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin relative z-10">
+<div class="p-8 md:p-14 rounded-2xl bg-surface-container-high shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
+<div class="flex flex-col max-w-xl">
+<div class="inline-flex items-center gap-2 mb-4">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-tech text-label-tech text-primary-container font-bold">ÚLTIMAS UNIDADES // LOTE ALPHA</span>
+</div>
+<h2 class="font-display-hero-mobile md:font-headline-xl text-display-hero-mobile md:text-headline-xl uppercase text-primary tracking-tight leading-none mb-4">
+            DOMINA EL ESPACIO AÉREO.
+          </h2>
+<p class="font-body-lg text-body-lg text-secondary">
+            Solo 5,000 balones certificados saldrán de la línea de fusión térmica en este ciclo de producción. Reserva tu unidad seriada antes del cierre de cupo oficial.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto">
+<div class="p-4 rounded-xl bg-surface-container flex flex-col items-center justify-center w-full sm:w-auto px-8">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">3,842</span>
+<span class="font-label-tech text-label-tech text-on-surface-variant">RESERVADOS / 5,000</span>
+</div>
+<button class="w-full sm:w-auto px-8 py-5 rounded bg-primary-container text-on-primary-container font-label-caps text-headline-md tracking-wider uppercase font-black hover:bg-primary-fixed shadow-[0_0_30px_rgba(195,244,0,0.5)] transition-all" type="button">
+            RESERVAR MI VORTEX PRO
+          </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleFaq(el) {
+    const content = el.querySelector('div:last-child');
+    const icon = el.querySelector('.material-symbols-outlined');
+    const isHidden = content.classList.contains('hidden');
+    
+    // Close other FAQ items
+    document.querySelectorAll('#faq-container > div').forEach(item => {
+      item.querySelector('div:last-child').classList.add('hidden');
+      item.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
+    });
+
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant"><div class="w-full px-margin-mobile md:px-gutter lg:px-margin max-w-[1440px] mx-auto py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg mb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Apex Aerodynamics Emblem" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMdfkNTp62lbnIkmW9QAZQed7MJEdd7caTBDnZyB9CTS9UKpWQMSUD9xolRcJAlMiUaNODHGE-XWXdVYZWcEDjoH1u6rnsoJVhrSuPLaZ21mP4F6eqdjtc9XkdLRlJDbBK7lm693bbjKorEH0L60niAFxsdTr2P7yVelrQJTuRRu-otrpVWZWXMBTPSlkjY8Mh6JMhJvrs8lqaYeRDt9j7xN4KMpe2ArnFob1c8-7AizcvwcDo33dj"/><span class="font-headline-md text-headline-md tracking-wider text-primary uppercase">APEX VORTEX</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Ingeniería de fluidodinámica aeroespacial aplicada al deporte de élite. Estándar FIFA Quality Pro con superficie biomimética microtexturizada y unión térmica sin costuras.</p><div class="flex items-center gap-space-md mt-space-sm"><div class="px-space-sm py-1 bg-surface-container rounded font-label-tech text-label-tech text-on-surface"><span class="text-primary-container mr-1">BATCH</span>#VX-2025-Q1</div><div class="px-space-sm py-1 bg-surface-container rounded font-label-tech text-label-tech text-on-surface"><span class="text-primary-container mr-1">CALIB</span>0.85 BAR</div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-1">Laboratorio &amp; R&amp;D</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="tecnologia-aerodinamica" href="#">Túnel Eiffel 42m/s</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="construccion-hexa-lock" href="#">Geometría Hexa-Lock</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="especificaciones-fifa-pro" href="#">Certificación FIFA Pro</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pruebas-tunel-viento" href="#">Telemetría de Vuelo</a></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase text-primary tracking-widest mb-1">División Pro</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="resenas-jugadores" href="#">Clubes Afiliados</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="reservar-edicion-limitada" href="#">Drops Exclusivos</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Kit de Prensa Técnica</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Protocolo de Autenticación</a></div><div class="lg:col-span-4 flex flex-col gap-space-md"><span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Acceso Prioritario al Drop</span><p class="font-body-sm text-body-sm text-on-surface-variant">Subscríbete al canal de telemetría para recibir la alerta de apertura de inventario de la edición de competición.</p><form class="flex flex-col sm:flex-row gap-space-xs"><input class="bg-surface-container px-space-md py-space-sm rounded font-label-tech text-label-tech text-on-surface focus:outline-none focus:ring-1 focus:ring-primary-container flex-grow" placeholder="telemetria@club.com" type="email"/><button class="bg-primary-container text-on-primary-container px-space-md py-space-sm rounded font-label-caps text-label-caps uppercase hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors shrink-0" type="submit">Suscribir</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded"><span class="font-label-tech text-label-tech text-primary uppercase">FIFA QUALITY PRO</span><span class="font-label-tech text-label-tech text-primary-container">#100428</span></div><span class="font-label-tech text-label-tech text-on-surface-variant">STANDARDS COMPLIANT / MATCH-GRADE A</span></div><div class="flex flex-wrap items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" href="#">Privacidad Técnica</a><a class="hover:text-on-surface transition-colors" href="#">Términos de Garantía</a><a class="hover:text-on-surface transition-colors" href="#">Certificados de Material</a><span>© 2025 APEX AERODYNAMICS. TODOS LOS DERECHOS RESERVADOS.</span></div></div></div></footer></body></html>
